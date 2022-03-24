@@ -1,32 +1,85 @@
 html{
-    background:linear-gradient(rgb(29, 29, 29) 10%,rgb(15, 15, 15) 100%);
+    background-image: url("https://images.hdqwalls.com/download/dark-3d-shapes-floor-4a-1242x2688.jpg");
     color:rgb(228, 228, 228);
     text-shadow: 1px 1px 3px black;
+    background-repeat: no-repeat;
+    background-size: cover;   
     
 }
 body{
     margin:0;
+    height: 100%;
+    backdrop-filter: blur(4px); 
 }
 header{
-    background-color: black;
+    background-color: rgba(34, 76, 116, 0.74);
     padding: 10px;
-    
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    transition: ease-in .2s;
+}
+header:hover{
+    transition: ease-in .2s;
+    background-color: rgba(58, 124, 187, 0.74);
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+.n1{
+    position: fixed;
+    bottom: 2rem;
+    left: 21rem;
+    text-decoration: none;
+    color: white;
+    border: white 1px solid;
+    padding:5px;
+    background-color: rgba(0, 0, 0, 0.164);
+}
+.n2{
+    position: fixed;
+    bottom: 2rem;
+    left: 25rem;
+    text-decoration: none;
+    color: white;
+    border: white 1px solid;
+    padding:5px;
+    background-color: rgba(0, 0, 0, 0.164);
 }
 h1{
-    text-align: center;
+    text-align: left;
+    margin-left: 3rem;
+    cursor:default;
 }
-p{
+
+
+h2{
     text-align: center;
+    font-size: 90px;
+    color: rgba(0, 217, 255, 0.849);
 }
-footer{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    height: 3rem;
-    left: 0;
-    right: 0;
-    background-color: rgb(10, 10, 10);
-    
-    
+video{
+    position:fixed;
+    right:0;
+    bottom:0;
+    min-height: 100%;
+    width: 100%;
+    border: none;
+    z-index: -1;
+
+}
+audio{
+    position:absolute ;
+    right:1.5rem;
+    bottom: 1.5rem;
+
+}
+a:hover{
+    color: rgb(0, 195, 255);
+    border: 1px solid rgb(0, 195, 255);
+    padding:7px;
+    background-color: rgba(0, 0, 0, 0.464);
 }
